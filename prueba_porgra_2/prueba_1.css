@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(imagenes/madera2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo{
+    width: 30px
+
+}
+
+
+.rrss{
+    width: 40px;
+    margin-right: 9px;
+}
+
+
+
+
+.carrusel{
+    width: 80;
+}
+
+h5{
+    background-color: black;
+}
+
+
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 14%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: rgba(6, 107, 132, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+    }
+
+
+.letras{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
